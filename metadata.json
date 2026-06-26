@@ -1,0 +1,6 @@
+{
+  "name": "Quiz App",
+  "description": "An interactive, beautifully designed quiz website featuring multiple categories, score tracking, time limits, custom quiz creation, and comprehensive answer reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

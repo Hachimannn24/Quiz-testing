@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Natural Tones Overrides */
+  --color-slate-50: #FDFBF7;
+  --color-slate-100: #EAE3D9;
+  --color-slate-200: #EAE3D9;
+  --color-slate-300: #A69080;
+  --color-slate-400: #A69080;
+  --color-slate-500: #A69080;
+  --color-slate-600: #4A443F;
+  --color-slate-700: #3D4F3D;
+  --color-slate-800: #3D4F3D;
+  --color-slate-900: #3D4F3D;
+  --color-slate-950: #3D4F3D;
+
+  --color-indigo-50: #F9FBF9;
+  --color-indigo-100: #F4F1EC;
+  --color-indigo-200: #EAE3D9;
+  --color-indigo-300: #A69080;
+  --color-indigo-400: #A69080;
+  --color-indigo-500: #7E8F7C;
+  --color-indigo-600: #7E8F7C;
+  --color-indigo-700: #6B7C69;
+  --color-indigo-800: #3D4F3D;
+  --color-indigo-900: #3D4F3D;
+  --color-indigo-950: #3D4F3D;
+  
+  /* Muted functional colors to match natural aesthetic */
+  --color-emerald-50: #F4F8F4;
+  --color-emerald-100: #E3EBE3;
+  --color-emerald-200: #C2D1C2;
+  --color-emerald-600: #5E7A5E;
+  --color-emerald-700: #4A634A;
+  
+  --color-rose-50: #FDF7F7;
+  --color-rose-100: #F7EAE8;
+  --color-rose-200: #E8CAC6;
+  --color-rose-600: #B5746E;
+  --color-rose-700: #945B56;
+}
+
+/* Custom styling for sleek scrolling and animations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.pulse-red {
+  animation: pulse-ring 2s infinite;
+}
+
